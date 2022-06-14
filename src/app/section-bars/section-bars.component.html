@@ -1,0 +1,26 @@
+<h1 class="hero">Spending - Last 7 days</h1>
+
+<div class="bars-container">
+    <div class="monday-bar bar"><p class="amount">${{days[0].amount}}</p></div>
+    <div class="tuesday-bar bar"><p class="amount">${{days[1].amount}}</p></div>
+    <div class="wednesday-bar bar"><p class="amount">${{days[2].amount}}</p></div>
+    <div class="thursday-bar bar"><p class="amount">${{days[3].amount}}</p></div>
+    <div class="friday-bar bar"><p class="amount">${{days[4].amount}}</p></div>
+    <div class="saturday-bar bar"><p class="amount">${{days[5].amount}}</p></div>
+    <div class="sunday-bar bar"><p class="amount">${{days[6].amount}}</p></div>
+</div>
+
+<ul class="days-list">
+    <li class="day" *ngFor="let item of days">{{item.day}}</li>
+</ul>
+
+<div class="summary">
+    <div class="summary__currently-month">
+        <p class="currently-month__total-text text">Total this month</p>
+        <p class="currently-month__total-number number">$478.33</p>
+    </div>
+    <div class="summary__last-month">
+        <p class="last-month__total-number number">+2.4%</p>
+        <p class="last-month__total-text text">from last month</p>
+    </div>
+</div>

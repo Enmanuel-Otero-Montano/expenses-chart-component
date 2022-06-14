@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: hsl(33, 100%, 98%);
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+}
+
+.balance-amount--text {
+    margin-bottom: 8px;
+    font-size: .95rem;
+}
+
+.balance-amount {
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header__logo {
+    width: 65px;
+}
+
+.logo {
+    width: 100%;
+}
